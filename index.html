@@ -1,0 +1,26 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terrazoom: Milky Way Generator</title>
+    <style> body {padding: 0; margin: 0px;} </style>
+    <script src="js/p5.js"></script>
+    <script src="js/p5.dom.js"></script>
+    <script src="js/skygen4.js"></script>
+	<script src="js/jscolor.js"></script>
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/style.css">
+
+  </head>
+  <body>
+  <div id = "skyDiv">
+    <div class="colorpicker">
+      <div id="colorpicker-text">Choose a sky color: <input class="jscolor" id="skycolor" value="1F3B56" onchange="changeSky(value)"></div>
+      <input type="button" id="newSky" value="New Sky" onClick="resetSky()" />
+      <input type="button" id="saveSky" value="Save Sky" onClick="saveSky()" />
+      <!-- input type="button" id="addMoon" value="Toggle Moon" onClick="addMoon()" / -->
+    </div>
+  </div>
+  </body>
+</html>

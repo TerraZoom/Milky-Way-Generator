@@ -1,0 +1,539 @@
+/* COLORS */
+.darkblue { background-color: #0e2133; }
+.brown { background-color: #2e2a21; }
+.black { background-color: #141e28; }
+.golden { background-color: #fbe38f; }
+.purplish { background-color: #c18bac; }
+.greenish { background-color: #2b4747; }
+.blue { background-color: #519ac7; }
+
+#skyDiv {display: inline-block; width: 100%; height:100%;}
+
+#container {
+width: 80%;
+margin: 0px auto;
+background: #FFFFFF;
+padding: 0px;
+}
+
+#content {
+width: 100%;
+padding-top: 50px;
+background: #e1e1e1;
+}
+
+#header {
+width: 100%;
+height: 50px;
+background: blue;
+position: absolute;
+top: 0px;
+}
+
+#configurator {
+	width: 50%;
+	height: 70vh;
+	margin: 10px 0 0 0;
+	padding: 0px;
+	background: #fff;
+	display: inline-block;
+}
+
+#display {
+	background: #fff;
+	display: inline-block;
+	padding: 25px 40px 25px 0;
+	width: 45%;
+	height: 60vh;
+	float:right;
+
+}
+
+#poster {
+	width: 95%;
+	padding: 0px;
+	border: 4px solid #e2e2e2;
+	width: 612px;
+	height: 792px;
+	position:relative;
+}
+
+#skybg {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+#section {
+	text-align: center;
+	width: 90%;
+}
+
+#identity {
+	background-color:#000;
+	width: 100%;
+	height: 30%;
+	position: absolute;
+	display: inline-block;
+	bottom: 0em;
+	left: 0px;
+}
+
+#inouye {
+	width:100%;
+	text-align:center;
+	display: inline-block;
+	margin: 5px auto;
+ }
+
+
+.button1 {
+	display:inline-block;
+	padding:0.3em 1.2em;
+	margin:0 0.3em 0.3em 0;
+	border-radius:.5em;
+	border: 3px solid #fef268;
+	box-sizing: border-box;
+	text-decoration:none;
+	font-family:'Roboto',sans-serif;
+	font-weight:300;
+	color:#000;
+	background-color:#fbb03b;
+	text-align:center;
+	transition: all 0.2s;
+}
+.button1:hover {
+	background-color:#ffe698;
+}
+
+.button2 {
+	display: inline-block;
+	transition: 0.5s ease;
+}
+
+.button2:hover {
+	opacity:.5;
+}
+
+
+/* GRADIENT STYLES */
+
+/* night sky */
+/* dark sky background: #1b3a56 mid: #5c7184 light: #7e8f9f */
+.sky1 {
+	background-color: #1b3a56; /* default */
+	background-size: cover;
+	height: 100%;
+}
+
+/* eclipse sky */
+.sky2 {
+	/* background-color: #1b3a56; /* default */
+	background: url('../assets/background2.jpg') no-repeat;
+	background-size: cover;
+	background-position: 30% 100%;
+
+}
+
+/* diamond ring sky */
+/* top and background: #121a27 bottom: #505460 */
+.sky3 {
+	background-image:
+		linear-gradient(
+		  #121a27, #505460
+		);
+}
+
+/* active sun sky */
+/* top and background: #4192c7 bottom: #77b8e0 */
+.sky4 {
+	background-image:
+		linear-gradient(
+		  #121a27, #505460
+		);
+
+	/* SUNRISE BACKGROUND */
+	/* background: rgb(19,23,32); /* Old browsers */
+	/* background: -moz-linear-gradient(top,  rgba(19,23,32,1) 0%, rgba(142,156,169,1) 47%, rgba(254,167,98,1) 63%, rgba(255,247,116,1) 86%); /* FF3.6-15 */
+	/* background: -webkit-linear-gradient(top,  rgba(19,23,32,1) 0%,rgba(142,156,169,1) 47%,rgba(254,167,98,1) 63%,rgba(255,247,116,1) 86%); /* Chrome10-25,Safari5.1-6 */
+	/* background: linear-gradient(to bottom,  rgba(19,23,32,1) 0%,rgba(142,156,169,1) 47%,rgba(254,167,98,1) 63%,rgba(255,247,116,1) 86%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	/* filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#131720', endColorstr='#fff774',GradientType=0 ); /* IE6-9 */
+}
+
+/* flow sky */
+.sky5 {
+	background: url('../assets/background5.png') no-repeat;
+	background-size: cover;
+	background-position: 50% 50%;
+}
+
+/* full disk sun sky - purplish */
+/* top and background: #c18bac bottom: #ffe8c9 */
+.sky6 {
+	background-image:
+		linear-gradient(
+		  #c18bac, #ffe8c9
+		);
+}
+
+/* bright sun - greenish sky */
+.sky7 {
+	background-image:
+		linear-gradient(
+		  #2a4848, #a2c7af
+		);
+}
+
+/* drawn sun blue sky */
+/* top and background: #4991c1 bottom: #7eb6d7 */
+.sky8 {
+	background-image:
+		linear-gradient(
+		  #4192c7, #77b8e0
+		);
+}
+
+#sundiv1 {
+	background: url('') no-repeat;
+	position: relative;
+	background-size: 100%;
+	width: 100%;
+	height: 100%;
+	display: inline-block;
+}
+#sundiv2 {
+	background: url('../assets/sun2.png') no-repeat;
+	position: relative;
+	background-size: 70%;
+	width: 100%;
+	height: 100%;
+	display: inline-block;
+	top: -6em;
+	left: -2em;
+ }
+#sundiv3 {
+	background: url('../assets/sun3.png') no-repeat;
+	position: relative;
+	background-size: 20%;
+	width: 100%;
+	height: 100%;
+	display: inline-block;
+	margin-top: 2em;
+	margin-left: 6em;
+}
+#sundiv4 {
+	background: url('../assets/sun4.png') no-repeat;
+	position: relative;
+	background-size: 70%;
+	width: 100%;
+	height: 100%;
+	display: inline-block;
+	margin-top: 5%;
+	margin-left: 0%;
+}
+#sundiv5 {
+	/* this is just an empty div
+	background: url('../assets/sun5.png') no-repeat;
+	position: relative;
+	background-size: 70%;
+	width: 100%;
+	height: 100%;
+	display: inline-block;
+	margin-top: -5%;
+	margin-left: -5%;
+	*/
+}
+#sundiv6 {
+	background: url('../assets/sun6.png') no-repeat;
+	position: relative;
+	background-size: 100%;
+	width: 100%;
+	height: 100%;
+	display: inline-block;
+	margin: 0 auto;
+}
+#sundiv7 {
+	background: url('../assets/sun7.png') no-repeat;
+	position: relative;
+	background-size: 100%;
+	width: 100%;
+	height: 100%;
+	display: inline-block;
+	margin: 0 auto;
+}
+#sundiv8 {
+	background: url('../assets/sun8.png') no-repeat;
+	position: relative;
+	background-size: 50%;
+	width: 100%;
+	height: 100%;
+	display: inline-block;
+	margin-top: 15%;
+	margin-left: 35%;
+}
+
+
+#telescope {
+	width:100%;
+	height: 100%;
+	position: relative;
+	display: inline-block;
+}
+
+#telescope1 {
+	background: url('../assets/dkist1.png') no-repeat;
+	position: absolute;
+	background-size: 100%;
+	width: 60%;
+	height: 100%;
+	display: inline-block;
+	bottom: 88.4em;
+	left: 0em;
+	z-index: 200;
+}
+#telescope2 {
+	background: url('../assets/dkist2.png') no-repeat;
+	position: absolute;
+	background-size: 100%;
+	width: 60%;
+	height: 100%;
+	display: inline-block;
+	bottom: 83.4em;
+	left: 0em;
+	z-index: 200;
+}
+#telescope3 {
+	background: url('../assets/dkist3.png') no-repeat;
+	position: absolute;
+	background-size: 100%;
+	width: 80%;
+	height: 100%;
+	display: inline-block;
+	bottom: 94.8em;
+	right: 0em;
+	z-index: 200;
+
+}
+#telescope4 {
+	background: url('../assets/dkist4.png') no-repeat;
+	position: absolute;
+	background-size: 100%;
+	width: 100%;
+	height: 100%;
+	display: inline-block;
+	bottom: 76.0em;
+	left: 0em;
+	z-index: 200;
+}
+#telescope5 {
+	background: url('../assets/dkist5.png') no-repeat;
+	position: absolute;
+	background-size: 100%;
+	width: 100%;
+	height: 100%;
+	display: inline-block;
+	bottom: 93.0em;
+	left: 0em;
+	z-index: 200;
+}
+#telescope6 {
+	background: url('../assets/dkist6.png') no-repeat;
+	position: absolute;
+	background-size: 100%;
+	width: 100%;
+	height: 100%;
+	display: inline-block;
+	bottom: 75.9em;
+	right: 0em;
+	z-index: 200;
+}
+#telescope7 {
+	background: url('../assets/dkist7.png') no-repeat;
+	position: absolute;
+	background-size: 100%;
+	width: 70%;
+	height: 100%;
+	display: inline-block;
+	bottom: 90.07em;
+	right: 0em;
+	z-index: 200;
+}
+
+#blurb {
+	width:100%;
+	height: 100%;
+	position: relative;
+	display: inline-block;
+}
+
+#blurb1 {
+	background: url('../assets/blurb1.png') no-repeat;
+	position: absolute;
+	background-size: 100%;
+	width: 50%;
+	height: 100%;
+	display: inline-block;
+	top: -50em;
+	left: 11em;
+	z-index: 100;
+}
+
+#blurb2 {
+	background: url('../assets/blurb2.png') no-repeat;
+	position: absolute;
+	background-size: 100%;
+	width: 50%;
+	height: 100%;
+	display: inline-block;
+	top: -50em;
+	left: 11em;
+	z-index: 100;
+}
+
+#blurb3 {
+	background: url('../assets/blurb3.png') no-repeat;
+	position: absolute;
+	background-size: 100%;
+	width: 50%;
+	height: 100%;
+	display: inline-block;
+	top: -50em;
+	left: 11em;
+	z-index: 100;
+}
+
+#blurb4 {
+	background: url('../assets/blurb4.png') no-repeat;
+	position: absolute;
+	background-size: 100%;
+	width: 50%;
+	height: 100%;
+	display: inline-block;
+	top: -50em;
+	left: 11em;
+	z-index: 100;
+}
+
+#blurb5 {
+	background: url('../assets/blurb5.png') no-repeat;
+	position: absolute;
+	background-size: 100%;
+	width: 50%;
+	height: 100%;
+	display: inline-block;
+	top: -50em;
+	left: 2em;
+	z-index: 100;
+}
+
+#blurb6 {
+	background: url('../assets/blurb6.png') no-repeat;
+	position: absolute;
+	background-size: 100%;
+	width: 50%;
+	height: 100%;
+	display: inline-block;
+	top: -50em;
+	left: 2em;
+	z-index: 100;
+}
+
+#blurb7 {
+	background: url('../assets/blurb7.png') no-repeat;
+	position: absolute;
+	background-size: 100%;
+	width: 50%;
+	height: 100%;
+	display: inline-block;
+	top: -50em;
+	left: 2em;
+	z-index: 100;
+}
+
+#blurb8 {
+	background: url('../assets/blurb8.png') no-repeat;
+	position: absolute;
+	background-size: 100%;
+	width: 50%;
+	height: 100%;
+	display: inline-block;
+	top: -50em;
+	left: 2em;
+	z-index: 100;
+}
+
+
+#sponsors {
+	text-align: center;
+	bottom: -7px;
+	position: absolute;
+	width: 100%;
+}
+
+#logos {
+	display: inline-block;
+	width:90%;
+	margin: 20px 0;
+	position: relative;
+	bottom: 1px;
+	left: 1px;
+	width: 24%;
+	text-align: center;
+	vertical-align: middle;
+}
+
+#hashtags {
+	text-align: center;
+	bottom: -2px;
+	position: absolute;
+	width: 100%;
+}
+
+#hashtag {
+	display: inline-block;
+	margin: 8px 0;
+	position: relative;
+	width: 32%;
+	text-align:center;
+	vertical-align: middle;
+	font-family: arial, helvetica, sans-serif;
+	font-size: 13px;
+	font-weight: 600;
+	color: #fff;
+}
+
+.wheel {
+  margin: 24px auto;
+  cursor: default; }
+
+.colorpicker {
+	position: absolute;
+	display; inline-block;
+	margin: 25px;
+	padding: 25px;
+	background: #fff;
+	opacity: .7;
+	border-radius: 25px;
+}
+
+#colorpicker-text {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 21px;
+	color: 1F3B56;
+	font-weight: bold;
+}
+
+.hover-icon {
+	padding: 12px 16px;
+	cursor: pointer;
+}
+
+.hover-icon-sharing { background-image: url('img/sharing.png'); }
+.hover-icon-download { background-image: url('img/download.png'); }
+.hover-icon-pallette { background-image: url('img/pallette.png'); }
+.hover-icon-refresh { background-image: url('img/refresh.png'); }
+
+.hover-icon:hover {
+	color: #eee;
+}
